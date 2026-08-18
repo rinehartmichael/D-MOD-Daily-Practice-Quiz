@@ -1,12 +1,72 @@
 <!DOCTYPE html>
-<html>
-<head><D MOD Practice tool.html>Interactives</D MOD Practice tool.html></head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D-MOD Daily Practice</title>
+  <style>
+    :root {
+      --bg: #0f1419;
+      --card: #1a2230;
+      --border: #2a3547;
+      --accent: #4a9eff;
+      --text: #e6edf3;
+      --muted: #8b98a9;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .wrap { width: 100%; max-width: 560px; }
+    h1 { font-size: 1.75rem; margin-bottom: 8px; }
+    p.sub { color: var(--muted); margin-bottom: 28px; }
+    a.tool {
+      display: block;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 22px;
+      text-decoration: none;
+      color: var(--text);
+      transition: border-color .15s, transform .15s;
+      margin-bottom: 14px;
+    }
+    a.tool:hover { border-color: var(--accent); transform: translateY(-2px); }
+    a.tool .name { font-size: 1.1rem; font-weight: 600; }
+    a.tool .desc { color: var(--muted); font-size: .9rem; margin-top: 4px; }
+    a.tool .arrow { float: right; color: var(--accent); font-size: 1.2rem; }
+    footer { color: var(--muted); font-size: .8rem; margin-top: 24px; text-align: center; }
+  </style>
+</head>
 <body>
-  <h1>Training Interactives</h1>
-  <ul>
-    <li><a href="D MOD Practice tool.html">Practice Tool</a></li>
-    <li><a href="D MOD Practice tool.html">Practice Reference</a></li>
-    <li><a href="D MOD Practice tool.html">Practice Tool</a></li>
-  </ul>
+  <div class="wrap">
+    <h1>D-MOD Daily Practice</h1>
+    <p class="sub">Select a tool to begin.</p>
+
+    <!-- If you rename the file to d-mod-practice.html, use this line: -->
+    <a class="tool" href="d-mod-practice.html">
+      <span class="arrow">&rarr;</span>
+      <div class="name">D-MOD Practice Quiz</div>
+      <div class="desc">Daily practice questions</div>
+    </a>
+
+    <!-- If you keep the original filename with spaces, use this line instead: -->
+    <!--
+    <a class="tool" href="D%20MOD%20Practice%20tool.html">
+      <span class="arrow">&rarr;</span>
+      <div class="name">D-MOD Practice Quiz</div>
+      <div class="desc">Daily practice questions</div>
+    </a>
+    -->
+
+    <footer>Hosted on GitHub Pages</footer>
+  </div>
 </body>
 </html>
